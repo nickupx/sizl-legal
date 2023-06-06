@@ -1,0 +1,138 @@
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('SuisseIntl-Medium.otf') format('otf'),
+  url('SuisseIntl-Medium.ttf') format('ttf'),
+  url('SuisseIntl-Medium.woff2') format('woff2'),
+  url('SuisseIntl-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('SuisseIntl-Bold.otf') format('otf'),
+  url('SuisseIntl-Bold.ttf') format('ttf'),
+  url('SuisseIntl-Bold.woff2') format('woff2'),
+  url('SuisseIntl-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('SuisseIntl-Book.ttf') format('ttf'),
+  url('SuisseIntl-Book.woff2') format('woff2'),
+  url('SuisseIntl-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('SuisseIntl-Light.otf') format('otf'),
+  url('SuisseIntl-Light.ttf') format('ttf'),
+  url('SuisseIntl-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background: #F1F2F3;
+  font-family: SuisseIntl, sans-serif;
+  font-feature-settings: "ss01" on,"ss05" on,"ss16" on;
+  padding: 2.2rem;
+  font-weight: 400;
+  color: #3A4046;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+strong {font-weight: 600;}
+
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: -0.05rem;
+  margin-bottom: 0.6rem;
+}
+
+h2 {font-size: 2.8rem;}
+
+h3 {font-size: 1.8rem;}
+
+.caption {
+  color: #9DA6AF;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.right {display: none;}
+
+.logo {
+  width: 64px; height: 64px;
+}
+
+.section-aside {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.aside {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.aside-heading {
+  color: #FF402E;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+  .header {
+    margin-right: 2rem;
+    flex: 1;
+    position: sticky;
+  }
+  .section-aside {
+    flex-direction: row;
+    max-width: 1280px;
+  }
+  .section {flex: 1}
+  .aside {
+    flex: 0 0 320px;
+    margin: 0 0 0 2rem;
+  }
+  .right {
+    display: block;
+    flex: 1;
+  }
+}

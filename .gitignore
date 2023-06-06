@@ -1,0 +1,43 @@
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore dependencies
+node_modules/
+bower_components/
+
+# Ignore log files
+*.log
+
+# Ignore cache files
+*.cache
+
+# Ignore temporary files
+*.tmp
+
+# Ignore environment files
+.env
+
+# Ignore compiled files
+*.min.js
+*.min.css
+
+# Ignore package-lock.json for npm
+package-lock.json
+
+# Ignore yarn.lock for Yarn
+yarn.lock
+
+# Ignore sourcemaps
+*.map
+
+# Ignore backup files
+*~
