@@ -57,6 +57,32 @@ body {
   color: #3A4046;
 }
 
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #D5D9DD;
+  color: #3F8CD3;
+}
+
+a.logo-link {
+  border: none;
+}
+
+a:visited {
+  color: #4A152F;
+}
+
+a:hover {
+  color: #FF402E;
+}
+
+hr {
+  height: 1px;
+  color:#D5D9DD;
+  border: none;
+  background-color: #D5D9DD;
+  margin-bottom: 3rem;
+}
+
 p {
   margin-bottom: 1rem;
   line-height: 1.5rem;
@@ -75,9 +101,20 @@ h2 {font-size: 2.8rem;}
 
 h3 {font-size: 1.8rem;}
 
+h4 {
+  font-size: 1rem; 
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
 .caption {
   color: #9DA6AF;
   margin-bottom: 2rem;
+}
+
+li {
+  margin: 0 0 1rem 2rem;
+  list-style-type: none;
 }
 
 .container {
@@ -102,20 +139,25 @@ h3 {font-size: 1.8rem;}
 }
 
 .aside {
-  background: #fff;
-  border-radius: 10px;
+  font-size: 1.4rem;
   padding: 1rem;
-  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #4A152F;
 }
 
 .aside-heading {
-  color: #FF402E;
-  font-size: 1.4rem;
+  color: #9DA6AF;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 1024px) {
   .container {
     flex-direction: row;
+    height: fit-content;
   }
   .header {
     margin-right: 2rem;
@@ -125,11 +167,16 @@ h3 {font-size: 1.8rem;}
   .section-aside {
     flex-direction: row;
     max-width: 1280px;
+    margin-bottom: 3rem;
   }
-  .section {flex: 1}
+  .section {
+    flex: 1
+  }
+
   .aside {
-    flex: 0 0 320px;
-    margin: 0 0 0 2rem;
+    flex: 0 0 480px;
+    margin: 0.18rem 0 0 2rem;
+    align-self: flex-start;
   }
   .right {
     display: block;
